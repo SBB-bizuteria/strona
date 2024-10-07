@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet">
+        <link href="style1.css" rel="stylesheet">
+        <meta charset="UTF-8">
+       <title>SBB bizuteria</title>
+       <link rel="shortcut icon" href="obrazy/sbb-logo.png">
+       <meta name="sbb,sbb bizuteria,sbbbizuteria,bizuteria,bizuteria sbb">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   </head>
+<body>
+    
+    
+    <div class="menu">
+        <div class="napisymenu">
+        <a href="firma.html" class="firma-menu"><h1 class="firma-menu">O NASZEJ FIRMIE</h1></a>
+        <a class="strona-glowna-menu" href="index.html"><h1 class="strona-glowna-menu">STRONA GŁÓWNA</h1></a>
+        <a href="https://www.vinted.pl/catalog?search_text=sbb.bizuteria&time=1728240197" class="vinted-menu"><h1 class="vinted-menu">VINTED</h1></a>
+        <img class="cytat-menu" src="obrazy/cytat.png" src="cytat">
+    </div>
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    <div class="container">
+        <img src="obrazy/drugi-lancuch-jeden.PNG" class="base-image" id="update">
+
+        <div class="image-miniatures" id="miniatures"> 
+            <img src="obrazy/drugi-lancuch-dwa.PNG">
+            <img src="obrazy/drugi-lancuch-trzy.PNG">
+        </div>
+
+        <center><img class="logo" src="obrazy/sbb-logo.png"></center>
+
+    </div>
+
+
+</body>
+
+<script>
+    const update = document.getElementById("update");
+    const miniatures = document.getElementById("miniatures");
+    const images = miniatures.getElementsByTagName("img");
+
+
+    for (let i = 0; i < images.length; i++) {
+        images[i].addEventListener("click", () => {
+            update.classList.remove("fade");
+            setTimeout(() => {
+                update.classList.add("fade");
+                update.src = images[i].src;
+            }, 100);
+        })
+    }
+</script>
+</html>

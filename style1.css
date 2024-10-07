@@ -1,0 +1,73 @@
+*
+{
+    transition: all 0.3s ease-in-out;
+}
+
+body
+{
+    background: white;
+
+}
+
+.logo
+{
+    height: 250px;
+    margin-top: 30px;
+}
+
+.container
+{
+    position: relative;
+    top: 25%;
+    margin-top: -150px;
+
+}
+
+.image-miniatures 
+{
+    cursor: pointer;
+    text-align: center;
+
+}
+
+.image-miniatures > img 
+{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.image-miniatures > img:hover
+{
+    transform: scale(1.1);
+} 
+
+.base-image
+{
+    width: 50%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
+    
+
+}
+
+.fade 
+{
+    animation: fade 0.5;
+}
+
+@keyframes fade 
+{
+    0%
+    {
+        opacity: 0%;
+    }
+
+    100%
+    {
+        opacity: 1%;
+    }
+}
+
